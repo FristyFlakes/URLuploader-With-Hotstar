@@ -1,13 +1,5 @@
 class Translation(object):
-    START_TEXT = """Hello,
-This is a Telegram URL Upload Bot made by @prgofficial
-
-<b>Please send me any Direct download URL link, I can upload to telegram as File/Video</b>
-
-/help for more details..
-
-Support Group : @moviesonlydiscussion
-© @prgofficial"""
+    START_TEXT = """<b>Hello, My Name Is 𝗛𝗢𝗧𝗦𝗧𝗔𝗥 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧 😎.\n\nI'm A 𝗛𝗢𝗧𝗦𝗧𝗔𝗥 𝗨𝗣𝗟𝗢𝗔𝗗 𝗕𝗢𝗧 Which Can Download Videos From Hotstar\n\nSend Me A 𝗩𝗮𝗹𝗶𝗱 <u>𝗛𝗼𝘁𝘀𝘁𝗮𝗿 𝗨𝗥𝗟 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸</u> & I'll Upload It To Telegram As A Streamble Video Or Document, See /Help For More Information\n\n❌ 𝗗𝗥𝗠 𝗖𝗢𝗡𝗧𝗘𝗡𝗧𝗦 Are Impossible To Download, Only Free Hotstar Contents Can Be Downloaded With This Bot.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBots For More Exciting Bots</b>"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>👉 Create own Clone Bot.. </b>  /help for Details"
