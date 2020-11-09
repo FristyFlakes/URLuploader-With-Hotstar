@@ -31,7 +31,7 @@ from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*https://www.hotstar.com/.*"))
+@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*https://.*"))
 async def echo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
