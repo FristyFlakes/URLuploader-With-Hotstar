@@ -7,4 +7,5 @@ Pillow
 https://github.com/Mahesh0253/pyrogram/archive/asyncio.zip
 requests
 tgcrypto
+youtube-dl
 git+https://github.com/blackjack4494/yt-dlc
