@@ -6,11 +6,12 @@ git+git://github.com/google/chatbase-python.git
 hachoir
 numpy
 Pillow
-https://github.com/Mahesh0253/pyrogram/archive/asyncio.zip
+https://github.com/pyrogram/pyrogram/archive/asyncio-dev.zip
 requests
 tgcrypto
 sqlalchemy
 psycopg2-binary
+youtube-dl
 feedparser
-#youtube-dl
-git+https://github.com/l1ving/youtube-dl
+#youtube-dlc
+git+https://github.com/hexbinoct/youtube-dlc
