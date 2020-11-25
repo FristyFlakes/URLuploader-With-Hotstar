@@ -218,6 +218,10 @@ async def echo(bot, update):
                     pyrogram.InlineKeyboardButton(
                         "🎧 MP3 " + "(" + "128 kbps" + ")", callback_data=cb_string_128.encode("UTF-8"))
                 ])
+                inline_keyboard.append([	
+                    pyrogram.InlineKeyboardButton(	
+                        "🎧 MP3 " + "(" + "320 kbps" + ")", callback_data=cb_string.encode("UTF-8"))	
+                ])
         else:
             format_id = response_json["format_id"]
             format_ext = response_json["ext"]
