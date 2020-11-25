@@ -2,74 +2,44 @@ class Translation(object):
     START_TEXT = """<b>Hello, My Name Is 𝗛𝗢𝗧𝗦𝗧𝗔𝗥 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧 😎.\n\nI'm A 𝗛𝗢𝗧𝗦𝗧𝗔𝗥 𝗨𝗣𝗟𝗢𝗔𝗗 𝗕𝗢𝗧 Which Can Download Videos From Hotstar\n\nSend Me A 𝗩𝗮𝗹𝗶𝗱 <u>𝗛𝗼𝘁𝘀𝘁𝗮𝗿 𝗨𝗥𝗟 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸</u> & I'll Upload It To Telegram As A Streamble Video Or Document, See /Help For More Information\n\n❌ 𝗗𝗥𝗠 𝗖𝗢𝗡𝗧𝗘𝗡𝗧𝗦 Are Impossible To Download, Only Free Hotstar Contents Can Be Downloaded With This Bot.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBots For More Exciting Bots</b>"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
-    UPGRADE_TEXT = "<b>👉 Create own Clone Bot.. </b>  /help for Details"
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
-    SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
-URL | filename | username | password"""
+    UPGRADE_TEXT = "<b>Plan:</b> Free User!. \n<b>Unlimited Plan</b>"
+    FORMAT_SELECTION = "<b>📌 Thumbnail Link :</b> <b><a href='{}'>Set Temporary Thumbnail</a></b> \n\nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\n\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+    SET_CUSTOM_USERNAME_PASSWORD = """\n𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 © @FlixBots @Entclass"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
-    DOWNLOAD_START = "trying to download"
-    UPLOAD_START = "trying to upload"
+    DOWNLOAD_START = "<b>𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴 𝗜𝗻𝘁𝗼 𝗠𝘆 𝗦𝗲𝗿𝘃𝗲𝗿 𝗡𝗼𝘄 ⚠️</b> \n\n<code>Please Wait Uploading Will Start Soon...</code>"
+    UPLOAD_START = "<b>𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴 𝗧𝗼 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗡𝗼𝘄 📁..</b>"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "Please rate me if you find me useful. Join : @moviesonlydiscussion"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \nJoin : @moviesonlydiscussion \nUploaded in {} seconds."
+    RCHD_TG_API_LIMIT = "<b>Downloaded in {} seconds.<b/>\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "<b>𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗧𝗵𝗶𝘀 𝗦𝗲𝗿𝘃𝗶𝗰𝗲, 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBot & @Entclass 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗔𝗺𝗮𝘇𝗶𝗻𝗴 𝗕𝗼𝘁𝘀</b>"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "<b>Downloaded in {} seconds.</b> \n<b>Thanks For Using This Free Service, Subscribe To @FlixBots & @Entclass For More Amazing Bots</b> \n<b>Uploaded in {} seconds.</b>"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
-    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ThankTelegram'>@SpEcHlDe</a>"
-    SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
-    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
-    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
-    SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
+    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription."
+    SAVED_CUSTOM_THUMB_NAIL = "𝗖𝘂𝘀𝘁𝗼𝗺 𝗩𝗶𝗱𝗲𝗼/𝗙𝗶𝗹𝗲 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 𝗜𝘀 𝗦𝗮𝘃𝗲𝗱. 𝗧𝗵𝗶𝘀 𝗜𝗺𝗮𝗴𝗲 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗨𝘀𝗲𝗱 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗡𝗲𝘅𝘁 𝗨𝗽𝗹𝗼𝗮𝗱 📁."
+    DEL_ETED_CUSTOM_THUMB_NAIL = "𝗖𝘂𝘀𝘁𝗼𝗺 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 𝗖𝗹𝗲𝗮𝗿𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 ❌."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "Media Cleared Succesfully ❌."
+    SAVED_RECVD_DOC_FILE = "𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 📁."
     CUSTOM_CAPTION_UL_FILE = " "
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
-    NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
+    NO_VOID_FORMAT_FOUND = "no-one gonna help you\n<b>YouTubeDL</b> said: {}"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     CURENT_PLAN_DETAILS = """Current plan details
 --------
 Telegram ID: <code>{}</code>
-Plan name: Free User
-Expires on: 31/12/2020"""
-    HELP_USER = """Hai am URL Uploader bot..
-    
-1. Send url (Link|New Name with Extension).
-2. Send Custom Thumbnail (Optional).
-3. Select the button.
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File with Screenshots
-   Video  - Give File as video without Screenshots
-   DFile  - Give File without Screenshots
-   
-<b>👉 Join For New Movies :</b> 👉 <a href="https://t.me/joinchat/AAAAAEw1pO1bBX6ylAb0hQ">JOIN</a>
+Plan name: <a href='https://t.me/SpEcHlDe/599'>{}</a>
+Expires on: {}"""
+    HELP_USER = """<b><u>🍁 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗛𝗼𝘁𝘀𝘁𝗮𝗿 𝗙𝗶𝗹𝗲𝘀 𝗙𝗿𝗼𝗺 𝗕𝗼𝘁 🍁</u></b>
+ 
+1. <b>Send Custom Thumbnail if required (It Will Be Saved Permanently) 📫
 
---------
-Send /me to know current plan details
+2. Send Your Hotstar link & select desired option.</b>
 
-Support Group : @MoviEzoNlysuppOrT
-© @MovieZonlYheRe"""
-    REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
-    REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
-    REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
-    REPLY_TO_DOC_FOR_RENAME_FILE = "Reply to a Telegram media to /rename with custom thumbnail support"
-    AFTER_GET_DL_LINK = "Direct Link <a href='{}'>Generated</a> valid for {} days.\n© @AnyDLBot"
-    FF_MPEG_RO_BOT_RE_SURRECT_ED = """Syntax: /trim HH:MM:SS [HH:MM:SS]"""
-    FF_MPEG_RO_BOT_STEP_TWO_TO_ONE = "First send /downloadmedia to any media so that it can be downloaded to my local. \nSend /storageinfo to know the media, that is currently downloaded."
-    FF_MPEG_RO_BOT_STOR_AGE_INFO = "Video Duration: {}\nSend /clearffmpegmedia to delete this media, from my storage.\nSend /trim HH:MM:SS [HH:MM:SS] to cu[l]t a small photo / video, from the above media."
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "A saved media already exists. Please send /storageinfo to know the current media details."
-    USER_DELETED_FROM_DB = "User <a href='tg://user?id={}'>{}</a> deleted from DataBase."
-    REPLY_TO_DOC_OR_LINK_FOR_RARX_SRT = "Reply to a Telegram media (MKV), to extract embedded streams"
-    REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Reply /generatecustomthumbnail to a media album, to generate custom thumbail"
-    ERR_ONLY_TWO_MEDIA_IN_ALBUM = "Media Album should contain only two photos. Please re-send the media album, and then try again, or send only two photos in an album."
-    INVALID_UPLOAD_BOT_URL_FORMAT = "URL format is incorrect. make sure your url starts with either http:// or https://. You can set custom file name using the format link | file_name.extension"
-    ABUSIVE_USERS = "You are not allowed to use this bot. If you think this is a mistake, please check /me to remove this restriction."
-    FF_MPEG_RO_BOT_AD_VER_TISE_MENT = "https://telegram.dog/FFMpegRoBot"
-    EXTRACT_ZIP_INTRO_ONE = "Send a compressed file first, Then reply /unzip command to the file."
-    EXTRACT_ZIP_INTRO_THREE = "Analyzing received file. ⚠️ This might take some time. Please be patient. "
-    UNZIP_SUPPORTED_EXTENSIONS = ("zip", "rar")
-    EXTRACT_ZIP_ERRS_OCCURED = "Sorry. Errors occurred while processing compressed file. Please check everything again twice, and if the issue persists, report this to <a href='https://telegram.dog/ThankTelegram'>@SpEcHlDe</a>"
-    EXTRACT_ZIP_STEP_TWO = """Select file_name to upload from the below options.
-You can use /rename command after receiving file to rename it with custom thumbnail support."""
-    CANCEL_STR = "Process Cancelled"
-    ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
-    FREE_USER_LIMIT_Q_SZE = """Cannot Process.
-Free users only 1 request per 30 minutes.
-/upgrade or Try 1800 seconds later."""
-    SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+<b>𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBots For More Exciting Bots</b>"""
+    BANNED_USER_TEXT = """Hi **{}!!!**, Congratulations 😂 You Are Now Banned"""
+    ABOUT_USER = """<b>○ My Name : 𝗛𝗢𝗧𝗦𝗧𝗔𝗥 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧</b>
+<b>○ Creator :</b> <a href='https://t.me/iggie/'>Iggie</a>
+<b>○ Credits :</b> <code>Everyone in this journey</code>
+<b>○ Language :</b> <a href='https://docs.pyrogram.org/'>Python3</a>
+<b>○ Library :</b> <code>Pyrogram asyncio 0.16.1</code>
+<b>○ Source Code :</b> <a href='https://t.me/NOSOURCECODE/'>👉 CLICK HERE 👈</a>
+<b>○ Server :</b> <code>Heroku</code>
+<b>○ Build Status :</b> <code>V5 [+0.4]</code>"""
