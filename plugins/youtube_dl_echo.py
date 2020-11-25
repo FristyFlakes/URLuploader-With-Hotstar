@@ -34,12 +34,28 @@ from helper_funcs.help_uploadbot import DownLoadFile
 @pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*https://www.hotstar.com.*"))
 async def echo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
+        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
         return
+    TRChatBase(update.from_user.id, update.text, "/echo")
+    update_channel = Config.UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await bot.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked":
+               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{update_channel} To Use Me")
+            await update.reply_text(
+                text="**𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 𝗠𝘆 <u>𝗖𝗵𝗮𝗻𝗻𝗲𝗹</u> 𝗕𝗲𝗹𝗼𝘄 𝗕𝗲𝗳𝗼𝗿𝗲 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲 😇**",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text="📣 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘 📣", url=f"https://t.me/{update_channel}")]
+              ])
+            )
+            return
+        except Exception:
+            await update.reply_text("Something Wrong. Contact my Support Group")
+            return
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/echo")
     # await bot.send_chat_action(
