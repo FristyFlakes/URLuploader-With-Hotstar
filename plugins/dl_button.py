@@ -237,7 +237,6 @@ async def ddl_call_back(bot, update):
             end_two = datetime.now()
             try:
                 os.remove(download_directory)
-                os.remove(thumb_image_path)
             except:
                 pass
             time_taken_for_download = (end_one - start).seconds
@@ -268,9 +267,9 @@ async def download_coroutine(bot, session, url, file_name, chat_id, message_id, 
         await bot.edit_message_text(
             chat_id,
             message_id,
-            text="""Initiating Download
-URL: {}
-File Size: {}""".format(url, humanbytes(total_length))
+            text="""<b>○ 𝗜𝗻𝗶𝘁𝗶𝗮𝘁𝗶𝗻𝗴 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱</b>
+<b>○ 𝗟𝗶𝗻𝗸 :</b> {}
+<b>○ 𝗦𝗶𝘇𝗲 :</b> {}<b>\n\n𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗙𝗼𝗿 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @FlixBots</b>""".format(url, humanbytes(total_length))
         )
         with open(file_name, "wb") as f_handle:
             while True:
@@ -289,11 +288,11 @@ File Size: {}""".format(url, humanbytes(total_length))
                         (total_length - downloaded) / speed) * 1000
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
-                        current_message = """**Download Status**
-URL: {}
-File Size: {}
-Downloaded: {}
-ETA: {}""".format(
+                        current_message = """**<b>○ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗦𝘁𝗮𝘁𝘂𝘀</b>**
+<b>○ 𝗟𝗶𝗻𝗸 :</b> {}
+<b>○ 𝗦𝗶𝘇𝗲 :</b> {}
+<b>○ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 :</b> {}
+<b>○ 𝗧𝗶𝗺𝗲 𝗟𝗲𝗳𝘁 :</b> {}\n\n<b>𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗙𝗼𝗿 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @FlixBots</b>""".format(
     url,
     humanbytes(total_length),
     humanbytes(downloaded),
